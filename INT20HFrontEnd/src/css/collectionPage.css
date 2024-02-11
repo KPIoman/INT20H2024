@@ -1,0 +1,21 @@
+.collection-top-poster {
+    height: 700px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.collection-top-poster img {
+    width: 100%;
+    transform: scale(1.1);
+}
+
+.collection-main-title {
+    color: var(--main);
+    font-family: var(--button-font);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.checkCollection-sec.collectionPage {
+    margin-bottom: 100px;
+}

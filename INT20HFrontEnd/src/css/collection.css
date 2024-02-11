@@ -1,0 +1,179 @@
+.collectionTitle {
+    font-family: var(--button-font);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--main);
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+
+.collection-filters {
+    display: flex;
+    position: relative;
+    justify-content: right;
+    gap: 28px;
+}
+
+.filter-block {
+    position: absolute;
+    padding: 10px;
+    height: 130px;
+    width: 500px;
+    z-index: 6;
+    display: none;
+    flex-direction: column;
+    gap: 40px;
+    top: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+}
+.filter-block.shown {
+    display: flex;
+}
+
+
+.sortBy-filter, .tag-filters {
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--main);
+    padding: 8px;
+    border-radius: 8px;
+    transition: .2s;
+    position: relative;
+    cursor: pointer;
+}
+.sortBy-filter:hover, .tag-filters:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+.sort-block {
+    position: absolute;
+    padding: 10px;
+    width: 150px;
+    z-index: 6;
+    display: none;
+    flex-direction: column;
+    top: 50px;
+    border-radius: 8px;
+    background-color: white;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+}
+.sort-block.shown {
+    display: flex;
+}
+
+.sort-option {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    transition: .2s;
+}
+.sort-option:last-of-type {
+    margin-bottom: 0;
+}
+.sort-option:hover {
+    background-color: var(--light);
+}
+.sort-option.chosen {
+    background-color: var(--action);
+    color: white;
+}
+.sort-option.chosen:hover {
+    background-color: var(--action);
+    color: white;
+}
+
+.price-slider-h2 {
+    font-size: 28px;
+    font-weight: 300;
+    font-family: var(--main-font);
+}
+
+.collection-sec {
+    margin-top: 45px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.collection-item {
+    width: 287px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 8px;
+}
+
+.collection-item-img-overlay {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 300px;
+    text-align: center;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.collection-item-img-overlay img {
+    width: 100%;
+    display: block;
+    margin: auto 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.collection-item .mainName {
+    font-family: var(--button-font);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--main);
+    margin-bottom: 10px;
+}
+.collection-item .sellerName {
+    font-weight: 300;
+    font-family: var(--main-font);
+    font-size: 20px;
+    color: var(--main);
+    margin-bottom: 30px;
+    height: 40px;
+}
+.currentBid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.currentBid span {
+    font-weight: 300;
+    font-family: var(--main-font);
+    font-size: 20px;
+    color: var(--main);
+}
+.makeBid-button {
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--action);
+    border: 1px solid var(--action);
+    color: white;
+    font-family: var(--button-font);
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;   
+    transition: .2s;
+}
+.makeBid-button:hover {
+    color: var(--action);
+    background-color: white;
+}

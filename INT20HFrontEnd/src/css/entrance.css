@@ -1,0 +1,165 @@
+.entrance-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.goBackLink {
+    color: var(--link);
+    font-size: 28px;
+    font-family: var(--main-font);
+    font-weight: 300;
+    position: absolute;
+    cursor: pointer;
+    top: 140px;
+    left: 50px;
+}
+
+.entrance-block {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 594px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.entrance-block.second-step{
+    display: none;
+}
+.entrance-block.update-password-step {
+    display: none;
+}
+.entrance-block.code-sent-step {
+    display: none;
+}
+.entrance-block.new-password-step {
+    display: none;
+}
+.entrance-title {
+    text-align: center;
+    color: var(--main);
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+.entranceInputSec {
+    position: relative;
+}
+.passwordEye {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    right: 22px;
+    top: 22px;
+}
+
+.entranceInput {
+    width: 100%;
+    height: 66px;
+    background-color: transparent;
+    border: 1px solid var(--light);
+    line-height: 66px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+.entranceInput::placeholder {
+    color: var(--main-light);
+}
+.sub-input-error {
+    margin-top: -25px;
+    font-size: 18px;
+    color: rgba(218, 36, 36, 1);
+    font-family: var(--main-font);
+    margin-bottom: 30px;
+}
+.entranceInput:focus {
+    outline: none;
+}
+
+.entrance-button {
+    width: 100%;
+    height: 66px;
+    line-height: 66px;
+    text-align: center;
+    font-size: 28px;
+    border: none;
+    font-family: var(--main-font);
+    color: white;
+    background-color: #B0B0B0;
+    border-radius: 8px;
+    cursor: not-allowed;
+    margin-bottom: 16px;
+
+}
+
+.inputName {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: var(--main-font);
+    color: var(--main);
+    margin-bottom: 16px;
+}
+
+.entrance-button.allowed {
+    background-color: var(--link);
+    color: white;
+    cursor: pointer;
+}
+
+.entrance-footer h3{
+    color: var(--main);
+    font-size: 20px;
+    font-family: var(--main-font);
+    font-weight: 300;
+    text-align: center;
+}
+.entrance-footer a {
+    color: var(--link);
+}
+.entrance-checkbox {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 30px;
+}
+#agreement-checkbox {
+    display: none;
+}
+.entrance-checkbox label {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid var(--main-light);
+    border-radius: 4px;
+    margin: auto 40px auto 0;
+}
+.entrance-checkbox h3 {
+    width: 490px;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: var(--main-font);
+    color: var(--main-light);
+
+}
+
+#agreement-checkbox:checked + label {
+    background-color: var(--main-light);
+}
+
+.forgot-password-button {
+    color: var(--link);
+    font-size: 20px;
+    font-family: var(--main-font);
+    font-weight: 300;
+    text-align: right;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}

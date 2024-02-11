@@ -1,0 +1,431 @@
+
+.links-way {
+    display: flex;
+    gap: 16px;
+    justify-content: left;
+    padding-top: 166px;
+    margin-bottom: 60px;
+}
+.links-way a, .links-way span {
+    color: var(--main-light);
+    font-family: var(--main-font);
+    font-size: 20px;
+}
+.links-way a:hover {
+    text-decoration: underline;
+}
+
+.lot-carousel-overlay {
+    width: 594px;
+}
+
+.lot-main-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slick-center .lot-carousel-poster {
+    width: 594px; /* Adjust the width as needed */
+    height: 787px; /* Adjust the height as needed */
+    z-index: 2;
+    border: 2px solid #fff; /* Example: Add a border to highlight the current slide */
+  }
+  
+  .lot-carousel-poster:not(.slick-center) {
+    transition: filter 0.3s ease-in-out;
+  }
+  .lot-carousel-poster {
+    width: 594px;
+    height: 787px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--light);
+    margin-bottom: 27px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .lot-carousel-poster img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .slick-arrow {
+    display: block;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: .2s;
+  }
+  .slick-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+  }
+
+  .slick-arrow.slick-next {
+    right: 20px;
+  }
+  .slick-arrow.slick-prev {
+    left: 20px;
+    z-index: 4;
+  }
+  .slick-dots li {
+    height: 6px;
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    transition: .2s ease-in-out;
+  }
+  .slick-dots {
+    z-index: 4;
+    bottom: 35px;
+  }
+  .slick-dots li.slick-active {
+    width: 30px;
+    height: 8px;
+    background-color: #fff;
+    top: -1px;
+  }
+
+  .lot-main-text-info {
+    width: 750px;
+    height: 787px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .text-upper-part {
+    width: 100%;
+  }
+
+  .lot-info-mainName {
+    font-family: var(--button-font);
+    color: var(--main);
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  .lot-info-sellerName {
+    color: var(--main);
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .lot-info-numbers-info {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  .numbers-info-text, .numbers-info-numbers {
+    display: flex;
+    flex-direction: column;
+  }
+  .numbers-info-text h2, .numbers-info-numbers h2{
+    display: inline-block;
+    color: var(--main);
+    font-weight: 300;
+    font-family: var(--main-font);
+    margin-bottom: 24px;
+  }
+  .numbers-info-numbers h2{
+    font-weight: 400;
+    text-align: right;
+  }
+  .lot-info-seller-sec h3 {
+    font-size: 28px;
+    font-weight: 300;
+    font-family: var(--main-font);
+    color: var(--main);
+    margin-bottom: 25px;
+  }
+  .active-users-popUp {
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+    top: 155px;
+  }
+  .active-users-popUp.shown {
+    display: block;
+  }
+  .popUp-chevron {
+    border-radius: 8px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  .popUp-chevron.shown {
+    transform: rotate(-180deg);
+    padding-top: 3px;
+  }
+  .usersPopUpNav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .usersPopUpItem {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .usersPopUpNav .navItem {
+    color: var(--main);
+    font-weight: 300;
+    font-size: 24px;
+    font-family: var(--main-font);
+
+  }
+  .usersPopUpNav .navItem.usersPopUpUser {
+    text-align: left;
+  }
+  .usersItem.usersPopUpUser {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+  }
+  .usersItem .orderNumber, .usersItem .popUp-userName, .popUpListBid.usersPopUpBid {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--main-font);
+    color: var(--main);
+    line-height: 40px;
+    }
+
+  .usersItem .popUp-userName {
+    font-weight: 300;
+  }
+
+  .usersItem.usersPopUpUser .popUp-avatar {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: var(--light);
+    position: relative;
+  }
+  .popUp-avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .info-seller-block {
+    width: 100%;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: #FFF5BE;
+    border: 1px solid #C4B257;
+  }
+  .seller-info-picture-plus-name {
+    display: inline-flex;
+    gap: 22px;
+    margin-bottom: 20px;
+  }
+  .seller-info-pp {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--light);
+    position: relative;
+  }
+  .seller-info-pp img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .seller-info-picture-plus-name h4 {
+    font-weight: 300;
+    font-size: 28px;
+    color: var(--main);
+    font-family: var(--main-font);
+    line-height: 60px;
+  }
+  .moreUserInfo-a {
+    display: flex;
+    justify-content: right;
+  }
+  .moreUserInfo-a a{
+    color: var(--main);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--button-font);
+  }
+  .moreUserInfo-a a img{
+    padding-top: 4px;
+    padding-left: 12px;
+  }
+  .lot-section-name, .lot-section-name span {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: var(--button-font);
+    color: var(--main);
+    margin-bottom: 40px;
+  }
+  .lot-description {
+    width: 100%;
+    color: var(--main);
+    font-weight: 300;
+    font-size: 28px;
+    font-family: var(--main-font);
+    margin-bottom: 100px;
+  }
+  .make-a-bid-info-link, .make-a-bid-info-button {
+    width: 474px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--action);
+    color: white;
+    border-radius: 8px;
+    border: 1px solid var(--action);
+    transition: .2s;
+    font-size: 32px;
+    font-family: var(--button-font);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .make-a-bid-info-link:hover, .make-a-bid-info-button:hover {
+    background-color: white;
+    color: var(--action);
+
+  }
+  .similar-lots-list {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 90px;
+  }
+  .lot-section-name span {
+    color: var(--main-light);
+  }
+  .comment-input-sec {
+    position: relative;
+    width: 100%;
+  }
+  .comment-input {
+    width: 100%;
+    height: 65px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color: #F0F0F0;
+    color: var(--main);
+    font-family: var(--main-font);
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0 13px;
+    margin-bottom: 44px;
+  }
+  .comment-input::placeholder {
+    color: var(--main-light);
+    font-weight: 300;
+  }
+  .comment-enter-button {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 13px;
+    top: 10px;
+    cursor: pointer;
+  }
+  .comment-enter-button.enable {
+    display: block;
+  }
+  .comments-overlay {
+    display: none;
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    z-index: 5;
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+  }
+  .comments-overlay a {
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    background-color: var(--action);
+    padding: 0 20px;
+    border-radius: 8px;
+    font-family: var(--button-font);
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--action);
+    transition: .2s;
+  }
+  .comments-overlay a:hover {
+    background-color: white;
+    color: var(--action);
+  }
+  .comments-overlay.enable {
+    display: block;
+  }
+  .comments-list-section {
+    margin-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .comment {
+    border-bottom: 1px solid var(--light);
+  }
+  .comment-upper {
+    display: flex;
+    margin-bottom: 20px
+  }
+  .comment-avatar {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: var(--light);
+    position: relative;
+    margin-right: 10px;
+  }
+  .comment-avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .comment-userName, .comment-date {
+    line-height: 60px;
+    color: black;
+    font-size: 28px;
+    font-family: var(--main-font);
+    font-weight: 300;
+    margin-right: 40px;
+  }
+  .comment-date {
+    margin-right: 0;
+    color: var(--main-light);
+  }
+  .comment-content {
+    font-size: 28px;
+    font-weight: 300;
+    color: black;
+    font-family: var(--main-font);
+    margin-bottom: 20px;
+  }

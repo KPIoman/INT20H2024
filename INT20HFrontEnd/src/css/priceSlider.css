@@ -1,0 +1,20 @@
+.example-track-0, .example-track-2 {
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--light);
+}
+.example-track-1 {
+    border-radius: 10px;
+    height: 20px;
+    background-color: var(--action);
+}
+.example-thumb-0, .example-thumb-1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--action);
+    background-color: white;
+    margin-top: -3px;
+    text-align: center;
+    line-height: 30px;
+}

@@ -1,0 +1,12 @@
+django
+gunicorn
+psycopg2
+django-cors-headers
+apscheduler
+google-api-python-client
+pytz~=2023.3.post1
+Pillow
+django-phonenumber-field
+phonenumbers
+djangorestframework
+django-rest-auth
